@@ -1,0 +1,22 @@
+
+version: '3'
+
+services: 
+  sd-service:
+    image: 'nvidia/cuda:12.4.1-cudnn-runtime-ubuntu22.04'
+    build: './sd-service'
+    privileged: true
+    ports: 
+      - 6000:6000
+    runtime: 'nvidia'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: 'nvidia'
+              count: 1
+              capabilities: ['gpu']
+              
+
+  
+  
