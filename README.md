@@ -4,32 +4,32 @@ Small project which uses FastAPI, Diffusers, and Docker to setup a container/ser
 
 ### Repo File Tree
 
->|-docker-compose.yml
->|-sd-service
->|----------|-app.py
->|----------|-pipeline.py
->|----------|-Dockerfile
->|----------|-run.py
->|----------|-generator.py
->|----------|-download_model.py
->|----------|-requirements.txt
->|-main.py
->|-generated_images
->|----------|-test_2996.jpg
->|----------|-test_4314.jpg
->|----------|-test_2153.jpg
->|----------|-test_1333.jpg
->|----------|-test_6615.jpg
->|----------|-test_8800.jpg
->|----------|-test_6865.jpg
->|----------|-test_2042.jpg
->|----------|-test_5209.jpg
->|----------|-test_4785.jpg
->|----------|-test_7951.jpg
->|----------|-test_1622.jpg
->|----------|-test_1743.jpg
->|----------|-test_3497.jpg
->|-README.md
+                >|-docker-compose.yml
+                >|-sd-service
+                >|----------|-app.py
+                >|----------|-pipeline.py
+                >|----------|-Dockerfile
+                >|----------|-run.py
+                >|----------|-generator.py
+                >|----------|-download_model.py
+                >|----------|-requirements.txt
+                >|-main.py
+                >|-generated_images
+                >|----------|-test_2996.jpg
+                >|----------|-test_4314.jpg
+                >|----------|-test_2153.jpg
+                >|----------|-test_1333.jpg
+                >|----------|-test_6615.jpg
+                >|----------|-test_8800.jpg
+                >|----------|-test_6865.jpg
+                >|----------|-test_2042.jpg
+                >|----------|-test_5209.jpg
+                >|----------|-test_4785.jpg
+                >|----------|-test_7951.jpg
+                >|----------|-test_1622.jpg
+                >|----------|-test_1743.jpg
+                >|----------|-test_3497.jpg
+                >|-README.md
 
 #### Inside sd-service
 > **app.py** contains the logic for the FastAPI app and router and other details.
@@ -60,13 +60,13 @@ Small project which uses FastAPI, Diffusers, and Docker to setup a container/ser
 
 
 ### File Tree when docker container is Running
->|-app.py
->|-pipeline.py
->|-Dockerfile
->|-run.py
->|-generator.py
->|-download_model.py
->|-requirements.txt
+                >|-app.py
+                >|-pipeline.py
+                >|-Dockerfile
+                >|-run.py
+                >|-generator.py
+                >|-download_model.py
+                >|-requirements.txt
 
 **Note on docker-compose.yml**
 > In order to run in a local machine must provide the capabiliy to the docker container to access the GPU otherwise it takes too long just with CPU.
